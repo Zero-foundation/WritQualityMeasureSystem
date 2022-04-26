@@ -8,15 +8,15 @@ public class criminalContent {
 
     String criminalName;//罪犯姓名
 
-    String criminalConsequence;//犯罪后果
+    //String criminalConsequence;//犯罪后果
 
-    List<String> punishment;//犯罪处罚
+    List<String> Judgement;//犯罪处罚
 
-    String seriousness;//情节严重性
+    List<String> circumstance;//情节和后果
 
     List<String> articles_law;//法律条文
 
-    List<String> chargeList;//罪名
+    List<String> crimeList;//罪名
 
     criminalContent(){
 
@@ -26,17 +26,17 @@ public class criminalContent {
         return articles_law;
     }
 
-    public List<String> getPunishment() {
-        return punishment;
+    public List<String> getJudgement() {
+        return Judgement;
     }
 
-    public List<String> getChargeList() {
-        return chargeList;
+    public List<String> getCrimeList() {
+        return crimeList;
     }
 
-    public String getCriminalConsequence() {
-        return criminalConsequence;
-    }
+    //public String getCriminalConsequence() {
+        //return criminalConsequence;
+    //}
 
     public String getCriminalId() {
         return criminalId;
@@ -46,7 +46,7 @@ public class criminalContent {
         return criminalName;
     }
 
-    public String getSeriousness() {
-        return seriousness;
+    public List<String> getCircumstance() {
+        return circumstance;
     }
 }

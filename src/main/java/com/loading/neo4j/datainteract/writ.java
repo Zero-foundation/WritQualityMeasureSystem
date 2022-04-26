@@ -18,7 +18,7 @@ public class writ {
 
     String component;//构成事项
 
-    writ( ){
+    writ(){
 
     }
 

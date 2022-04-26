@@ -6,7 +6,7 @@ import com.loading.neo4j.dao.LawDao;
 import com.loading.neo4j.dao.CriminalDao;
 import com.loading.neo4j.entity.Basic.BasicNode;
 import com.loading.neo4j.entity.Crime;
-import com.loading.neo4j.entity.law;
+import com.loading.neo4j.entity.Law;
 import com.loading.neo4j.entity.Criminal;
 import com.loading.neo4j.entity.RelationShip;
 import org.junit.Test;
@@ -15,14 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-/**
- * desc:
- * Created on 2017/10/13.
- *
- * @author Lo_ading
- * @version 1.0.0
- * @since 1.0.0
- */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 //@Transactional
@@ -62,13 +55,13 @@ public class GraphServiceTest {
         graphService.saveNode(criminalC);
         //System.out.println(JSON.toJSONString(criminalC));
 
-        law lawA = new law();
+        Law lawA = new Law();
         lawA.setNodeName("law");
         lawA.setLaw("a law");
         graphService.saveNode(lawA);
         //System.out.println(JSON.toJSONString(lawA));
 
-        law lawB = new law();
+        Law lawB = new Law();
         lawB.setNodeName("law");
         lawB.setLaw("b law");
         graphService.saveNode(lawB);
@@ -107,7 +100,7 @@ public class GraphServiceTest {
 
     @Test
     public void findLaw() throws Exception {
-        law law = lawDao.findOne(34L,1);
+        Law law = lawDao.findOne(34L,1);
         System.out.println(JSON.toJSONString(law));
     }
 

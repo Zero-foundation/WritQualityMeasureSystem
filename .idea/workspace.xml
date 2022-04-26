@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="update details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/LawDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/LawDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/criminalContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/criminalContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/writ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/writ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Circumstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Circumstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Crime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Crime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Judgment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Judgment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/law.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Law.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/loading/neo4j" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
@@ -52,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaworkspace\WritQualityMeasureSystem" />
       <recent name="D:\javaworkspace\WritQualityMeasureSystem\src\main\java\com\loading\neo4j" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -126,7 +134,7 @@
       <updated>1650784096938</updated>
       <workItem from="1650784099408" duration="10759000" />
       <workItem from="1650805217082" duration="707000" />
-      <workItem from="1650806184779" duration="3093000" />
+      <workItem from="1650806184779" duration="7603000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1650807389243</created>
@@ -149,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650970912060</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update details">
+      <created>1650971378714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650971378714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

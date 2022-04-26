@@ -9,7 +9,7 @@ import java.util.*;
 
 
 @NodeEntity
-public class law extends endNode implements BasicNodeInterface{
+public class Law extends endNode implements BasicNodeInterface{
 
     private String law;
 
@@ -19,8 +19,11 @@ public class law extends endNode implements BasicNodeInterface{
     //@Relationship(type = "INVEST", direction = Relationship.OUTGOING)
     private Set<RelationShip> relationShips;
 
-    public law(){
+    public Law(){
 
+    }
+    public Law(String law){
+        this.law = law;
     }
 
     public String getLaw() {

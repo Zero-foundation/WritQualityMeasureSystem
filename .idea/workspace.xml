@@ -7,8 +7,6 @@
     <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="update details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/service/GraphCreateService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +127,7 @@
       <updated>1650784096938</updated>
       <workItem from="1650784099408" duration="10759000" />
       <workItem from="1650805217082" duration="707000" />
-      <workItem from="1650806184779" duration="10372000" />
+      <workItem from="1650806184779" duration="11513000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1650807389243</created>
@@ -173,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650975958390</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update details">
+      <created>1650994496062</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650994496062</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

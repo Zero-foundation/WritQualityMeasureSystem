@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 
-public class createGraphDaoImpl {
+public class createGraphDaoImpl implements createGraphDao {
     @Autowired
     private GraphService graphService;
     List<criminalContent> criminalContentList;

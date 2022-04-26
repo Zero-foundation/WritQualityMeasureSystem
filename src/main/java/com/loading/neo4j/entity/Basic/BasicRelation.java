@@ -4,14 +4,7 @@ import org.neo4j.ogm.annotation.*;
 
 import java.util.Date;
 
-/**
- * desc:
- * Created on 2017/10/11.
- *
- * @author Lo_ading
- * @version 1.0.0
- * @since 1.0.0
- */
+
 @RelationshipEntity(type = "DEFAULT")
 public class BasicRelation implements BasicRelationInterface{
 

@@ -11,15 +11,23 @@ import java.util.List;
 public class createGraphDaoImpl {
     @Autowired
     private GraphService graphService;
+    List<criminalContent> criminalContentList;
     criminalContent c;
     Criminal criminalA;
-    public createGraphDaoImpl(criminalContent c){
-        this.c = c;
-        createCriminal();
-        createCrime();
-        createLaw();
-        createCircumstance();
-        createJudgement();
+    public createGraphDaoImpl(List<criminalContent> cl){
+        this.criminalContentList = cl;
+    }
+    public void createGraph(){
+
+        for(criminalContent cC : criminalContentList){
+            this.c = cC;
+            createCriminal();
+            createCrime();
+            createLaw();
+            createCircumstance();
+            createJudgement();
+        }
+
     }
     private void createCriminal(){
         criminalA = new Criminal();

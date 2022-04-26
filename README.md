@@ -1,5 +1,5 @@
-# neo4j-demo
-neo4j demo for springboot
+# WritQualityMeasureSystem
+WritQualityMeasureSystem backend -- springboot neo4j
 
 
 # run

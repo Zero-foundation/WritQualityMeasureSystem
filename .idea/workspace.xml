@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="新建了两个dto，写了readFromJSON">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" afterDir="false" />
+    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="update details">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,15 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="28EaF8dvjAZSz0RshvAbI9Kd9UN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -53,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flink-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
@@ -62,13 +52,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaworkspace\WritQualityMeasureSystem" />
       <recent name="D:\javaworkspace\WritQualityMeasureSystem\src\main\java\com\loading\neo4j" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.loading.neo4j.readUtils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.readFromJson">
+  <component name="RunManager" selected="JUnit.GraphServiceTest.save">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -76,19 +67,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="readFromJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.readUtils.readFromJson" />
-      <module name="WritQualityMeasureSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.loading.neo4j.readUtils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,7 +112,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.readFromJson" />
         <item itemvalue="JUnit.GraphServiceTest.save" />
         <item itemvalue="JUnit.GraphServiceTest.findLaw" />
       </list>
@@ -150,19 +127,58 @@
       <updated>1650784096938</updated>
       <workItem from="1650784099408" duration="10759000" />
       <workItem from="1650805217082" duration="707000" />
-      <workItem from="1650806184779" duration="966000" />
-      <workItem from="1650812951444" duration="1571000" />
-      <workItem from="1650985841621" duration="5843000" />
-      <workItem from="1651036696246" duration="9638000" />
+      <workItem from="1650806184779" duration="11513000" />
     </task>
-    <task id="LOCAL-00001" summary="新建了两个dto，写了readFromJSON">
-      <created>1651062493059</created>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1650807389243</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1651062493059</updated>
+      <updated>1650807389243</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init project">
+      <created>1650807421394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650807421394</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update details">
+      <created>1650970912060</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650970912060</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update details">
+      <created>1650971378714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650971378714</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update details">
+      <created>1650975908861</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650975908861</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update details">
+      <created>1650975958390</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650975958390</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update details">
+      <created>1650994496062</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650994496062</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,18 +197,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新建了两个dto，写了readFromJSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="新建了两个dto，写了readFromJSON" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="init project" />
+    <MESSAGE value="update details" />
+    <option name="LAST_COMMIT_MESSAGE" value="update details" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

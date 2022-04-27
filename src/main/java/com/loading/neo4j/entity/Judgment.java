@@ -9,7 +9,8 @@ import java.util.*;
 
 
 @NodeEntity
-public class Judgment extends BasicNode implements BasicNodeInterface{
+public class Judgment extends endNode implements BasicNodeInterface{
+    @Relationship(type = "relationShip", direction = Relationship.INCOMING)
     List<String> judgment;
     public Judgment(){
 

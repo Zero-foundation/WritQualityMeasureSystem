@@ -7,14 +7,7 @@ import com.loading.neo4j.entity.Basic.BasicRelation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * desc:
- * Created on 2017/10/10.
- *
- * @author Lo_ading
- * @version 1.0.0
- * @since 1.0.0
- */
+
 @Service
 public class GraphService {
 

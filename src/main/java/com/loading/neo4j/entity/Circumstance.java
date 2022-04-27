@@ -9,7 +9,10 @@ import java.util.*;
 
 
 @NodeEntity
-public class Circumstance extends BasicNode implements BasicNodeInterface {
+public class Circumstance extends endNode implements BasicNodeInterface {
+
+    @Relationship(type = "relationShip", direction = Relationship.INCOMING)
+
     private List<String> circumstanceList;
     public Circumstance(){
 

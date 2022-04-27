@@ -18,8 +18,8 @@ public class readFromJson {
         String content="";
         String encoding = "UTF-8";
         File file = new File(fileName);
-        Long filelength = file.length();
-        byte[] filecontent = new byte[filelength.intValue()];
+        long filelength = file.length();
+        byte[] filecontent = new byte[(int) filelength];
         try {
             FileInputStream in = new FileInputStream(file);
             in.read(filecontent);

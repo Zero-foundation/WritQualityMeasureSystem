@@ -5,8 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="update details">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WritQualityMeasureSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WritQualityMeasureSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wenshu_9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/BasicRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/BasicRelationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CircumstanceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CircumstanceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CrimeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CrimeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CriminalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CriminalDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/JudgmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/JudgmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/LawDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/LawDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/criminalContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/criminalContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/writ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Crime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Crime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/dto/Accused.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/Accused.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/dto/wenshu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/Writ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +78,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataTest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
@@ -52,14 +88,29 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaworkspace\WritQualityMeasureSystem\dataTest" />
       <recent name="D:\javaworkspace\WritQualityMeasureSystem" />
       <recent name="D:\javaworkspace\WritQualityMeasureSystem\src\main\java\com\loading\neo4j" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.loading.neo4j.service" />
       <recent name="com.loading.neo4j.readUtils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GraphServiceTest.save">
+  <component name="RunManager" selected="JUnit.GraphServiceTest.createGraph">
+    <configuration name="readFromJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.readUtils.readFromJson" />
+      <module name="WritQualityMeasureSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loading.neo4j.readUtils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -71,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphServiceTest.findLaw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphServiceTest.createGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WritQualityMeasureSystem" />
       <extension name="coverage">
         <pattern>
@@ -81,13 +132,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
       <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.GraphServiceTest" />
-      <option name="METHOD_NAME" value="findLaw" />
+      <option name="METHOD_NAME" value="createGraph" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphServiceTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphServiceTest.findCrime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WritQualityMeasureSystem" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +148,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
       <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.GraphServiceTest" />
-      <option name="METHOD_NAME" value="save" />
+      <option name="METHOD_NAME" value="findCrime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphServiceTest.save1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WritQualityMeasureSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loading.neo4j.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
+      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.GraphServiceTest" />
+      <option name="METHOD_NAME" value="save1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphServiceTest.tttt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WritQualityMeasureSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loading.neo4j.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
+      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.GraphServiceTest" />
+      <option name="METHOD_NAME" value="tttt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,8 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GraphServiceTest.save" />
-        <item itemvalue="JUnit.GraphServiceTest.findLaw" />
+        <item itemvalue="JUnit.GraphServiceTest.createGraph" />
+        <item itemvalue="JUnit.GraphServiceTest.findCrime" />
+        <item itemvalue="JUnit.GraphServiceTest.save1" />
+        <item itemvalue="JUnit.GraphServiceTest.tttt" />
+        <item itemvalue="Application.readFromJson" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +213,9 @@
       <updated>1650784096938</updated>
       <workItem from="1650784099408" duration="10759000" />
       <workItem from="1650805217082" duration="707000" />
-      <workItem from="1650806184779" duration="11513000" />
+      <workItem from="1650806184779" duration="24067000" />
+      <workItem from="1651144814364" duration="33279000" />
+      <workItem from="1651383738539" duration="6498000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1650807389243</created>
@@ -178,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650994496062</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update details">
+      <created>1650996509641</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650996509641</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

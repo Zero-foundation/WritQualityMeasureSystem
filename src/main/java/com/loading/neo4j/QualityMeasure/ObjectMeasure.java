@@ -1,19 +1,25 @@
 package com.loading.neo4j.QualityMeasure;
 
+import com.loading.neo4j.datainteract.Writ;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class ObjectMeasure {
-    int object_score;
-    Map<String,String> object_score_list;
-    Map<String,String> map_content;
-    ObjectMeasure(Map<String,String> map){
-        object_score = 0;
-        object_score_list = new HashMap<String, String>();
-        map_content = map;
+    int objectScore;
+    int inteScore;
+    int consiScore;
+    int accScore;
+
+    Writ writ;
+    ObjectMeasure(Writ writ){
+        objectScore = 100;
+        this.writ = writ;
     }
+
+
     public void cal_integrality(){
-        //完整性
+        //判决内容完整性
 
     }
     public void cal_acc(){
@@ -25,6 +31,8 @@ public class ObjectMeasure {
     public void cal_consistency(){
         //一致性
     }
+
+
     private void cal_trial(){
         //审理经过
     }

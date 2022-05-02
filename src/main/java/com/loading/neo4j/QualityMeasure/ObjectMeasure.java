@@ -7,9 +7,9 @@ import java.util.Map;
 
 public class ObjectMeasure {
     int objectScore;
-    int inteScore;
-    int consiScore;
-    int accScore;
+    int inteScore;//判决完整性得分
+    int consiScore;//一致性得分
+    int accScore;//准确性得分
 
     Writ writ;
     ObjectMeasure(Writ writ){

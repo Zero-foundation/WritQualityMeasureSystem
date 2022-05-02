@@ -4,44 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="update details">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WritQualityMeasureSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WritQualityMeasureSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_12.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wenshu_9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/GraphCreate/createGraphDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/BasicRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/BasicRelationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CircumstanceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CircumstanceDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CrimeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CrimeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CriminalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CriminalDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/JudgmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/JudgmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/LawDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/LawDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/criminalContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/criminalContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/writ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Crime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Crime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/dto/Accused.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/Accused.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/dto/wenshu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/Writ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +24,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="28EaF8dvjAZSz0RshvAbI9Kd9UN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -215,7 +189,7 @@
       <workItem from="1650805217082" duration="707000" />
       <workItem from="1650806184779" duration="24067000" />
       <workItem from="1651144814364" duration="33279000" />
-      <workItem from="1651383738539" duration="6498000" />
+      <workItem from="1651383738539" duration="8872000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1650807389243</created>
@@ -273,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650996509641</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1651420582432</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651420582432</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +275,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
     <MESSAGE value="update details" />
-    <option name="LAST_COMMIT_MESSAGE" value="update details" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

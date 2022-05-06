@@ -28,4 +28,8 @@ public interface CrimeDao extends Neo4jRepository<Crime, Long> {
 
     @Query("match (:Crime { crime: {crime} })<--(n : Criminal) return n")
     List<Criminal> queryCriminalByCrime(@Param("crime") String crime);
+
+
+    @Query("MATCH (n:Criminal) -->(end : Crime) where id(n) = {id} RETURN count(end)")
+    int queryNumOfCrimeByCriminalId(@Param("id") Long id);
 }

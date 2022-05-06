@@ -1,10 +1,12 @@
 package com.loading.neo4j.service;
 
 import com.alibaba.fastjson.JSON;
+import com.loading.neo4j.QualityMeasure.subjectMeasure;
 import com.loading.neo4j.dao.BasicNodeDao;
 import com.loading.neo4j.dao.CrimeDao;
 import com.loading.neo4j.dao.LawDao;
 import com.loading.neo4j.dao.CriminalDao;
+import com.loading.neo4j.datainteract.Writ;
 import com.loading.neo4j.datainteract.criminalContent;
 import com.loading.neo4j.entity.Basic.BasicNode;
 import com.loading.neo4j.entity.Crime;
@@ -48,6 +50,9 @@ public class GraphServiceTest {
     @Autowired
     createGraphService createGDI;
 
+    @Autowired
+    subjectMeasure subjectM;
+
     @Test
     public void createGraph(){
         String dirName="dataTest\\";
@@ -57,6 +62,26 @@ public class GraphServiceTest {
         //createGDI = new createGraphService();
         createGDI.createGraphList(cCList);
         createGDI.createGraph();
+    }
+    @Test
+    public void lawMeasure(){
+        String dirName="dataMeasureTest\\";
+        readFromJson readU = new readFromJson();
+        readU.readFromDir(dirName);
+        Writ writ = readU.readFromDir(dirName).get(0);
+        subjectM.subjectM(writ);
+        subjectM.lawRight();
+
+    }
+    @Test
+    public void JudgeMeasure(){
+        String dirName="dataMeasureTest\\";
+        readFromJson readU = new readFromJson();
+        readU.readFromDir(dirName);
+        Writ writ = readU.readFromDir(dirName).get(0);
+        subjectM.subjectM(writ);
+        subjectM.JudgmentRight();
+
     }
     @Test
     public void save() throws Exception {

@@ -5,6 +5,7 @@ import com.loading.neo4j.datainteract.Writ;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class ObjectMeasure {
     int objectScore;
     int inteScore;//判决完整性得分

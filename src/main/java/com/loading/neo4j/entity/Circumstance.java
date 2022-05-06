@@ -21,6 +21,11 @@ public class Circumstance extends endNode implements BasicNodeInterface {
         this.circumstanceList = circumstanceList;
     }
     //@Override
+
+    public List<String> getCircumstanceList() {
+        return circumstanceList;
+    }
+
     Set<RelationShip> sets = new HashSet<>();
     public Set<RelationShip> getSets() {
         return sets;

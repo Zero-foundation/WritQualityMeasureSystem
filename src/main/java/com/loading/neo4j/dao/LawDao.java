@@ -25,4 +25,7 @@ public interface LawDao extends Neo4jRepository<Law, Long> {
 
     @Query("match (:Law { law: {law} })<--(n : Criminal) return n")
     List<Criminal> queryCriminalByLaw(@Param("law") String law);
+
+    @Query("MATCH (n:Criminal) -->(end : Law) where id(n) = {id} RETURN end")
+    List<Law> queryLawByCriminalId(@Param("id") Long id);
 }

@@ -6,18 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/subjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/subjectMeasure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CircumstanceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CircumstanceDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CrimeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CrimeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CriminalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/CriminalDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/JudgmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/JudgmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/LawDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/dao/LawDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Circumstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Circumstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Judgment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/entity/Judgment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +191,7 @@
       <workItem from="1650805217082" duration="707000" />
       <workItem from="1650806184779" duration="24067000" />
       <workItem from="1651144814364" duration="33279000" />
-      <workItem from="1651383738539" duration="41355000" />
+      <workItem from="1651383738539" duration="42691000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1650807389243</created>
@@ -275,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651493842171</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update">
+      <created>1651868102593</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651868102593</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,8 +304,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/subjectMeasure.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="24" />
+          <line>150</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

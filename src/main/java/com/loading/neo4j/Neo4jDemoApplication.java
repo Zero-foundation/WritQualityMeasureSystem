@@ -10,7 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 		"com.loading.neo4j.Controller",
 		"com.loading.neo4j.dao",
 		"com.loading.neo4j.service",
-		"com.loading.neo4j.QualityMeasure"
+		"com.loading.neo4j.QualityMeasure",
+		"com.loading.neo4j.config"
 })
 
 public class Neo4jDemoApplication {

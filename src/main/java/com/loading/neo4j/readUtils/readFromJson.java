@@ -91,10 +91,6 @@ public class readFromJson {
             List<Accused> accuseds= writ.getAccused_list();
             List<String> laws = writ.getLaws();
             for(Accused accused : accuseds){
-
-
-
-
                 criminalContent cC = new criminalContent(accused,laws);
                 cCList.add(cC);
             }

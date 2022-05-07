@@ -1,7 +1,7 @@
 package com.loading.neo4j.QualityMeasure;
 
-import com.loading.neo4j.entity.dto.Accused;
-import com.loading.neo4j.entity.dto.wenshu;
+import com.loading.neo4j.datainteract.Accused;
+import com.loading.neo4j.datainteract.Writ;
 import com.loading.neo4j.readUtils.readFromDocx;
 
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ObjectMeasure {
-    wenshu ws;
+    Writ ws;
 //    int object_score;
 //    Map<String,String> object_score_list;
 //    Map<String,String> map_content;
@@ -21,10 +21,10 @@ public class ObjectMeasure {
 //        object_score_list = new HashMap<String, String>();
 //        map_content = map;
 //    }
-    ObjectMeasure(){
-
+public ObjectMeasure(Writ ws){
+        this.ws=ws;
     }
-    public void setWenshu(wenshu ws){
+    public void setWenshu(Writ ws){
         this.ws=ws;
     }
 
@@ -174,7 +174,7 @@ public class ObjectMeasure {
     public void cal_acc(){
         //准确性
         cal_trial();
-        cal_person();
+//        cal_person();
         cal_constituent();
     }
     public void cal_consistency(){
@@ -248,10 +248,9 @@ public class ObjectMeasure {
 
 
     public static void main(String[] args){
-        ObjectMeasure objectMeasure=new ObjectMeasure();
-        wenshu ws=new readFromDocx().extract("D:\\PythonProcect\\xingchu\\于志祥危险驾驶罪一审刑事判决书.docx");
-//        ws.setAccused("被告人xxx，高中文化\n被告人xxxxx,高中文化，无业");
-        objectMeasure.setWenshu(ws);
+
+        Writ ws=new readFromDocx().extract("D:\\PythonProcect\\xingchu\\于志祥危险驾驶罪一审刑事判决书.docx");
+        ObjectMeasure objectMeasure=new ObjectMeasure(ws);
         objectMeasure.cal_integrality();
     }
 

@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="客观数据质量度量" />
+    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="客观数据质量度量">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromDocx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromDocx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,23 +76,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case-base_back-end" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVAWeb\WritQualityMeasureSystem\src\main\java\com\loading\neo4j\VO" />
       <recent name="D:\javaworkspace\WritQualityMeasureSystem" />
       <recent name="D:\javaworkspace\WritQualityMeasureSystem\src\main\java\com\loading\neo4j" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.loading.neo4j.config" />
       <recent name="com.loading.neo4j.readUtils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ObjectMeasure">
+  <component name="RunManager" selected="Spring Boot.Neo4jDemoApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -206,7 +215,8 @@
       <workItem from="1651682432421" duration="1495000" />
       <workItem from="1651727093534" duration="16538000" />
       <workItem from="1651812119685" duration="17304000" />
-      <workItem from="1651899995284" duration="1542000" />
+      <workItem from="1651899995284" duration="5177000" />
+      <workItem from="1651907241936" duration="11092000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1650807389243</created>
@@ -271,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651901638008</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="客观数据质量度量">
+      <created>1651901680665</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651901680665</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

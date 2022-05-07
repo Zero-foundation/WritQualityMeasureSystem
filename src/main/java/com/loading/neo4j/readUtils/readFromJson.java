@@ -3,20 +3,22 @@ package com.loading.neo4j.readUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.loading.neo4j.entity.dto.Accused;
-import com.loading.neo4j.entity.dto.wenshu;
+import com.loading.neo4j.datainteract.criminalContent;
+import com.loading.neo4j.datainteract.Accused;
+import com.loading.neo4j.datainteract.Writ;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class readFromJson {
 
-    public Set<String> crimes=new HashSet<>();
-    public List<wenshu> readFromJson(String fileName) {
-        List<wenshu> res=new ArrayList<>();
+    List<Writ> res=new ArrayList<>();
+    List<criminalContent> cCList = new ArrayList<>();
+    public readFromJson(){
+    }
+    public List<Writ> readFromData(String fileName) {
+        List<Writ> re=new ArrayList<>();
         String content="";
         String encoding = "UTF-8";
         File file = new File(fileName);
@@ -39,7 +41,7 @@ public class readFromJson {
         content = "["+content.substring(0,content.length()-1)+"]";
         JSONArray arr=JSON.parseArray(content);
         for(Object obj:arr){
-            wenshu ws=new wenshu();
+            Writ ws=new Writ();
             JSONObject jsonObj=(JSONObject)obj;
             ws.setName((String)jsonObj.get("name"));
             ws.setProsecutionOrgan((String) jsonObj.get("prosecution_organ"));
@@ -64,37 +66,53 @@ public class readFromJson {
                     accused.setCrimes(new String[]{ws.getCrime()});
                 }
                 ws.addAccused(accused);
-                for(String crime:accused.getCrimes()){
-                    crimes.add(crime);
-                }
-                if(accused.getCrimes().length==0){
-                    System.out.println("hit");
-                }
 
             }
-            res.add(ws);
+            re.add(ws);
         }
 
-        return res;
+        return re;
     }
-    public List<wenshu> readFromDir(String dirName){
-        List<wenshu> res=new ArrayList<>();
+    public List<Writ> readFromDir(String dirName){
+        //List<Writ> res=new ArrayList<>();
         File dir = new File(dirName);
         if(dir.isDirectory()){
             String[] children=dir.list();
             assert children != null;
             for (String fileName:children){
-                res.addAll(readFromJson(dirName+fileName));
+                res.addAll(readFromData(dirName+fileName));
             }
         }
         return res;
     }
-    public static void main(String[] args){
-        // replace the fileName below with your local address.
-        String dirName="D:\\PythonProcect\\judgementSpider\\data\\alter\\";
-        readFromJson rfj=new readFromJson();
-        List<wenshu> list=rfj.readFromDir(dirName);
-        System.out.println(list.size());
+    public List<criminalContent> getcCList(String dirName) {
+        readFromDir(dirName);
+        for(Writ writ : res){
+            List<Accused> accuseds= writ.getAccused_list();
+            List<String> laws = writ.getLaws();
+            for(Accused accused : accuseds){
 
+
+
+
+                criminalContent cC = new criminalContent(accused,laws);
+                cCList.add(cC);
+            }
+
+
+
+        }
+        return cCList;
+    }
+
+
+    public List<criminalContent>  run(){
+        // replace the fileName below with your local address.
+        String dirName="data2\\";
+        readFromJson readU = new readFromJson();
+        //List<Writ> list=readU.readFromDir(dirName);
+        List<criminalContent> cCList = readU.getcCList(dirName);
+        System.out.println(cCList.size());
+        return cCList;
     }
 }

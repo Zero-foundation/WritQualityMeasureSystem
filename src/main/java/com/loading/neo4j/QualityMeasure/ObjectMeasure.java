@@ -174,6 +174,7 @@ public class ObjectMeasure {
     public void cal_acc(){
         //准确性
         cal_trial();
+        cal_person();
         cal_constituent();
     }
     public void cal_consistency(){
@@ -253,6 +254,7 @@ public class ObjectMeasure {
         objectMeasure.setWenshu(ws);
         objectMeasure.cal_integrality();
     }
+
 
 
 

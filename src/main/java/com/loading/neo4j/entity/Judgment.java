@@ -18,6 +18,11 @@ public class Judgment extends endNode implements BasicNodeInterface{
     public Judgment(List<String> judgment){
         this.judgment = judgment;
     }
+
+    public List<String> getJudgment() {
+        return judgment;
+    }
+
     Set<RelationShip> sets = new HashSet<>();
     public Set<RelationShip> getSets() {
         return sets;

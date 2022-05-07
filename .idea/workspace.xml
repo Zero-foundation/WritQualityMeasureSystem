@@ -292,9 +292,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
     <MESSAGE value="update details" />
-    <MESSAGE value="update git ignore" />
-    <MESSAGE value="客观数据质量度量" />
-    <option name="LAST_COMMIT_MESSAGE" value="客观数据质量度量" />
+    <option name="LAST_COMMIT_MESSAGE" value="update details" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

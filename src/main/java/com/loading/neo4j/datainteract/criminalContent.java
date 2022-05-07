@@ -1,10 +1,11 @@
 package com.loading.neo4j.datainteract;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class criminalContent {
 
-    String criminalId;//罪犯id
+    //String criminalId;//罪犯id
 
     String criminalName;//罪犯姓名
 
@@ -18,7 +19,15 @@ public class criminalContent {
 
     List<String> crimeList;//罪名
 
-    criminalContent(){
+    public criminalContent(){
+
+    }
+    public criminalContent(Accused accused, List<String> laws){
+        this.criminalName = accused.getName();
+        this.circumstance = Arrays.asList(accused.getCircumstance());
+        this.articles_law = laws;
+        this.Judgement = Arrays.asList(accused.getJudge_res());
+        this.crimeList = Arrays.asList(accused.getCrimes());
 
     }
 
@@ -38,9 +47,9 @@ public class criminalContent {
         //return criminalConsequence;
     //}
 
-    public String getCriminalId() {
-        return criminalId;
-    }
+    //public String getCriminalId() {
+       // return criminalId;
+    //}
 
     public String getCriminalName() {
         return criminalName;

@@ -5,18 +5,22 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.loading.neo4j.datainteract.Accused;
 import com.loading.neo4j.datainteract.Writ;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
+@Component
 public class readFromDocx {
-    public static void main(String[] args){
-        Writ ws=new readFromDocx().extract("D:\\PythonProcect\\judgementSpider\\judgements\\董某某故意伤害罪一审刑事判决书.docx");
-        System.out.println(ws.getReply());
-    }
 
+    @Value("${python.location}")
+    private String python_location;
+    @Value("${extract.location}")
+    private String pythonPath;
     /**
      *
      * @param fileName
@@ -27,8 +31,9 @@ public class readFromDocx {
      * TODO：这个方法需要修改，入参应该是一个从前端获取的file对象？或者String；目前是从本地文件中读取
      */
     public Writ extract(String fileName){
-        String pythonPath = "D:\\PythonProcect\\judgementSpider\\src\\extract.py";
-        String[] arguments = new String[] {"D:\\PythonProcect\\judgementSpider\\venv\\Scripts\\python.exe",pythonPath,fileName};//指定命令、路径、传递的参数
+
+//        String pythonPath = "D:\\PythonProcect\\judgementSpider\\src\\extract.py";
+        String[] arguments = new String[] {python_location,pythonPath,fileName};//指定命令、路径、传递的参数
         StringBuilder sbrs = null;
         StringBuilder sberror = null;
         try {

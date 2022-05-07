@@ -3,29 +3,49 @@ package com.loading.neo4j.QualityMeasure;
 import com.loading.neo4j.datainteract.Accused;
 import com.loading.neo4j.datainteract.Writ;
 import com.loading.neo4j.readUtils.readFromDocx;
+import lombok.Getter;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+@Getter
 public class ObjectMeasure {
     Writ ws;
-//    int object_score;
-//    Map<String,String> object_score_list;
-//    Map<String,String> map_content;
-//    ObjectMeasure(Map<String,String> map){
-//        object_score = 0;
-//        object_score_list = new HashMap<String, String>();
-//        map_content = map;
-//    }
-public ObjectMeasure(Writ ws){
-        this.ws=ws;
+    private List<String> advice;
+    //被告人信息
+    double criminal_score;
+    //审判流程
+    double trial_score;
+    //完整性
+    double integrality_score;
+    //一致性评分
+    double consistency_score;
+
+    double acc_score;
+
+    public ObjectMeasure(Writ ws) {
+        this.ws = ws;
+        advice=new ArrayList<>();
+        criminal_score=0.0;
+        trial_score=0.0;
+        integrality_score=0.0;
+        integrality_score=0.0;
+        consistency_score=0.0;
+        acc_score=0.0;
+
     }
+
     public void setWenshu(Writ ws){
         this.ws=ws;
+    }
+    //计算所有属性
+    public void cal_all(){
+        cal_integrality();
+        cal_criminal();
+        cal_trial();
+        cal_consistency();
+        cal_acc();
     }
 
     /**
@@ -64,22 +84,15 @@ public ObjectMeasure(Writ ws){
      *
      */
     public void cal_integrality(){
-        //完整性
-        //TODO: 计算被告人信息完整性
-        System.out.println(cal_criminal());
-        //TODO: 计算程序完整性
-        System.out.println(cal_trial());
-        //TODO: 事实完整性
-        //最后根据各部分做个加权
-
+        
 
     }
 
     /**
      * 计算被告人信息完整性
-     * @return
      */
-    public double cal_criminal(){
+    public void cal_criminal(){
+        
         String text=ws.getAccused();
         List<List<String>> criminalReses=regexFind("被告人.*\n?",text);
         List<Double> scoreList=new ArrayList<>();
@@ -159,28 +172,30 @@ public ObjectMeasure(Writ ws){
             sb.deleteCharAt(sb.length()-1);
             sb.append("有待补充。");
             //TODO: 加入到建议里
-            System.out.println(sb.toString());
+            if(sb.length()>0){
+                this.advice.add(sb.toString());
+            }
             scoreList.add(score);
         }
         double score_all=0;
         for(double score:scoreList){
             score_all+=score;
         }
-
-        return score_all/scoreList.size();
+        this.criminal_score=score_all/scoreList.size();
     }
 
 
     public void cal_acc(){
+        
         //准确性
-        cal_trial();
-//        cal_person();
-        cal_constituent();
+        this.acc_score=(this.trial_score+this.criminal_score)/2.0;
     }
     public void cal_consistency(){
+        
         //一致性
     }
-    private double cal_trial(){
+    public void cal_trial(){
+        
         //审理经过
         List<String> missingList=new ArrayList<>();
         double score=0.0;
@@ -190,42 +205,42 @@ public ObjectMeasure(Writ ws){
         if(accusationRes.size()==0){
             missingList.add("起诉书指控");
         }else{
-            score+=10.0;
+            score+=100/6.0;
         }
 
         List<List<String>> processRes=regexFind("(适用简易程序)|(普通程序)|(组成合议庭)|(速裁程序)",text);
         if(processRes.size()==0){
             missingList.add("适用程序");
         }else{
-            score+=10.0;
+            score+=100/6.0;
         }
 
         List<List<String>> hearRes=regexFind("(不?公开开庭审理)|(进行了审理)",text);
         if(hearRes.size()==0){
             missingList.add("审理");
         }else{
-            score+=10.0;
+            score+=100/6.0;
         }
 
         List<List<String>> inspectorRes=regexFind("检察员",text);
         if(inspectorRes.size()==0){
             missingList.add("检察员到庭情况");
         }else{
-            score+=10.0;
+            score+=100/6.0;
         }
 
         List<List<String>> defendantRes=regexFind("被告人[^。，；]*到庭",text);
         if(defendantRes.size()==0){
             missingList.add("被告人到庭情况");
         }else{
-            score+=10.0;
+            score+=100/6.0;
         }
 
         List<List<String>> completionRes=regexFind("审理终结",text);
         if(completionRes.size()==0){
             missingList.add("审理终结与否");
         }else{
-            score+=10.0;
+            score+=100/6.0;
         }
 
 
@@ -238,13 +253,12 @@ public ObjectMeasure(Writ ws){
             sb.append("有待补充。");
         }
         //TODO: 加入到建议里
-        System.out.println(sb.toString());
-        return score;
+        if(sb.length()>0){
+            this.advice.add(sb.toString());
+        }
+        this.trial_score=Math.round(score);
     }
-    private void cal_constituent(){
-        //构成事项
 
-    }
 
 
     public static void main(String[] args){

@@ -20,7 +20,8 @@ import java.io.*;
 public class scoreController {
     @Autowired
     ScoreService scoreService;
-
+    @Autowired
+    readFromDocx rfd;
     @PostMapping("score")
     public ResponseVO score(@RequestParam("file") MultipartFile file) throws IOException {
         //将文件保存在本地的D:\\Writ_temp文件夹下
@@ -44,7 +45,7 @@ public class scoreController {
         outputStream.close();
 
         //调用python方法获取Writ对象
-        Writ ws = new readFromDocx().extract(fileName);
+        Writ ws = rfd.extract(fileName);
         try {
             System.out.println("successfully extract file");
             return ResponseVO.buildSuccess(scoreService.score(ws));

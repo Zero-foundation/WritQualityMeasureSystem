@@ -15,8 +15,14 @@ public class ScoreService {
     public AnalysisReport score(Writ ws){
         AnalysisReport analysisReport=new AnalysisReport();
         ObjectMeasure objectMeasure=new ObjectMeasure(ws);
-        objectMeasure.cal_integrality();
-        analysisReport.setAccScore(objectMeasure.cal_criminal());
+        objectMeasure.cal_all();
+        analysisReport.setAccScore(objectMeasure.getAcc_score());
+        analysisReport.setConsiScore(objectMeasure.getConsistency_score());
+        analysisReport.setInteScore(objectMeasure.getIntegrality_score());
+        analysisReport.setCriminalScore(objectMeasure.getCriminal_score());
+        analysisReport.setTrialScore(objectMeasure.getTrial_score());
+        analysisReport.addAdvices(objectMeasure.getAdvice());
+        //TODO: 主观质量评估
         return analysisReport;
     }
 }

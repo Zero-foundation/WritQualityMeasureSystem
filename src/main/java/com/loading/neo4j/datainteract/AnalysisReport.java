@@ -20,8 +20,8 @@ public class AnalysisReport {
     double accScore;//准确性得分
     double trialScore;//审判流程得分
     double criminalScore;//被告人信息得分
-    int lawScore;//法条适用性得分
-    int JudgeScore;//审判偏离打分
+    double lawScore;//法条适用性得分
+    double JudgeScore;//审判偏离打分
 
     public void addAdvices(List<String> list){
         this.ObjectAdvice.addAll(list);

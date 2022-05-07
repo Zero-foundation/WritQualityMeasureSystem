@@ -11,7 +11,8 @@ import javax.security.auth.Subject;
 
 @Service
 public class ScoreService {
-
+    @Autowired
+    subjectMeasure subjectM;
     public AnalysisReport score(Writ ws){
         AnalysisReport analysisReport=new AnalysisReport();
         ObjectMeasure objectMeasure=new ObjectMeasure(ws);
@@ -23,6 +24,9 @@ public class ScoreService {
         analysisReport.setTrialScore(objectMeasure.getTrial_score());
         analysisReport.addAdvices(objectMeasure.getAdvice());
         //TODO: 主观质量评估
+        subjectM.subjectM(ws);
+        analysisReport.setJudgeScore(subjectM.JudgmentRight());
+        analysisReport.setLawScore(subjectM.lawRight());
         return analysisReport;
     }
 }

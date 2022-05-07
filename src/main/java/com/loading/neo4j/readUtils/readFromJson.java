@@ -8,11 +8,13 @@ import com.loading.neo4j.entity.dto.wenshu;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class readFromJson {
 
-
+    public Set<String> crimes=new HashSet<>();
     public List<wenshu> readFromJson(String fileName) {
         List<wenshu> res=new ArrayList<>();
         String content="";
@@ -62,6 +64,12 @@ public class readFromJson {
                     accused.setCrimes(new String[]{ws.getCrime()});
                 }
                 ws.addAccused(accused);
+                for(String crime:accused.getCrimes()){
+                    crimes.add(crime);
+                }
+                if(accused.getCrimes().length==0){
+                    System.out.println("hit");
+                }
 
             }
             res.add(ws);
@@ -84,7 +92,9 @@ public class readFromJson {
     public static void main(String[] args){
         // replace the fileName below with your local address.
         String dirName="D:\\PythonProcect\\judgementSpider\\data\\alter\\";
-        List<wenshu> list=new readFromJson().readFromDir(dirName);
+        readFromJson rfj=new readFromJson();
+        List<wenshu> list=rfj.readFromDir(dirName);
         System.out.println(list.size());
+
     }
 }

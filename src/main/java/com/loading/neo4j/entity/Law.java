@@ -49,4 +49,5 @@ public class Law extends endNode implements BasicNodeInterface{
     public void setRelationShips(Set<RelationShip> relationShips) {
         this.relationShips = relationShips;
     }
+
 }

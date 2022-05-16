@@ -95,8 +95,6 @@ public class readFromJson {
                 cCList.add(cC);
             }
 
-
-
         }
         return cCList;
     }

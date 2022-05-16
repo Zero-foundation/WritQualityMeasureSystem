@@ -30,7 +30,7 @@ public class readFromDocx {
      * 本地的python需要安装一些库，比如docx
      * TODO：这个方法需要修改，入参应该是一个从前端获取的file对象？或者String；目前是从本地文件中读取
      */
-    public Writ extract(String fileName){
+    public Writ extract(String fileName) throws Exception {
 
 //        String pythonPath = "D:\\PythonProcect\\judgementSpider\\src\\extract.py";
         String[] arguments = new String[] {python_location,pythonPath,fileName};//指定命令、路径、传递的参数
@@ -58,12 +58,16 @@ public class readFromDocx {
             in.close();
             process.waitFor();
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Exception("文书解析失败，请检查内容");
         }
 
         System.out.println(sberror);
         assert sbrs != null;
+        try{
         return readFromJson(sbrs.toString());
+        }catch (Exception e){
+            throw new Exception("文书解析失败，请检查内容");
+        }
     }
     public Writ readFromJson(String obj){
         Writ ws=new Writ();
@@ -79,6 +83,7 @@ public class readFromDocx {
         ws.setDecision((String)jsonObj.get("decision"));
         ws.setRubufu((String)jsonObj.get("rubufu"));
         ws.setLuokuan((String) jsonObj.get("luokuan"));
+        ws.setCrime((String) jsonObj.get("crime"));
         JSONArray law_arr=(JSONArray) jsonObj.get("law");
         for(Object law_obj:law_arr){
             ws.addLaw(law_obj.toString());

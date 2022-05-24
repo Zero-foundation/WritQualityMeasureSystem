@@ -6,15 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="feat: 整合python代码，完善接口;完善分析报告等">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Controller/scoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Controller/scoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/Writ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/Writ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromDocx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromDocx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/service/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/service/ScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/subjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/subjectMeasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +73,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataMeasureTest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -89,6 +82,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaworkspace\WritQualityMeasureSystem\dataMeasureTest" />
       <recent name="D:\JAVAWeb\WritQualityMeasureSystem\python" />
       <recent name="D:\JAVAWeb\WritQualityMeasureSystem\src\main\java\com\loading\neo4j\VO" />
       <recent name="D:\javaworkspace\WritQualityMeasureSystem" />
@@ -99,44 +93,47 @@
       <recent name="com.loading.neo4j.readUtils" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Neo4jDemoApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GraphServiceTest.JudgeMeasure">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectMeasureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphServiceTest.JudgeMeasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WritQualityMeasureSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.loading.neo4j.QualityMeasure.*" />
+          <option name="PATTERN" value="com.loading.neo4j.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.loading.neo4j.QualityMeasure" />
-      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.QualityMeasure.ObjectMeasureTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
+      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.GraphServiceTest" />
+      <option name="METHOD_NAME" value="JudgeMeasure" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectMeasureTest.calAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphServiceTest.lawMeasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WritQualityMeasureSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.loading.neo4j.QualityMeasure.*" />
+          <option name="PATTERN" value="com.loading.neo4j.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.loading.neo4j.QualityMeasure" />
-      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.QualityMeasure.ObjectMeasureTest" />
-      <option name="METHOD_NAME" value="calAllTest" />
+      <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
+      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.GraphServiceTest" />
+      <option name="METHOD_NAME" value="lawMeasure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GraphServiceTest.JudgeMeasure" />
+        <item itemvalue="JUnit.GraphServiceTest.lawMeasure" />
         <item itemvalue="JUnit.getLevelTest.getLevelUtil" />
         <item itemvalue="JUnit.ObjectMeasureTest.sortLevel" />
         <item itemvalue="JUnit.ObjectMeasureTest.getLevelTest" />
-        <item itemvalue="JUnit.ObjectMeasureTest.calAllTest" />
-        <item itemvalue="JUnit.ObjectMeasureTest" />
       </list>
     </recent_temporary>
   </component>

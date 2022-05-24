@@ -68,9 +68,15 @@ public class GraphServiceTest {
         String dirName="dataMeasureTest\\";
         readFromJson readU = new readFromJson();
         readU.readFromDir(dirName);
-        Writ writ = readU.readFromDir(dirName).get(0);
-        subjectM.subjectM(writ);
-        subjectM.lawRight();
+        //Writ writ = readU.readFromDir(dirName).get(0);
+        int i = 0;
+        for(Writ writ : readU.readFromDir(dirName)){
+            if(i==1) break;
+            i++;
+            subjectM.subjectM(writ);
+            subjectM.lawRight();
+        }
+
 
     }
     @Test
@@ -78,9 +84,14 @@ public class GraphServiceTest {
         String dirName="dataMeasureTest\\";
         readFromJson readU = new readFromJson();
         readU.readFromDir(dirName);
-        Writ writ = readU.readFromDir(dirName).get(0);
-        subjectM.subjectM(writ);
-        subjectM.JudgmentRight();
+        //Writ writ = readU.readFromDir(dirName).get(0);
+        int i = 0;
+        for(Writ writ : readU.readFromDir(dirName)) {
+            if (i == 100) break;
+            i++;
+            subjectM.subjectM(writ);
+            subjectM.JudgmentRight();
+        }
 
     }
     @Test

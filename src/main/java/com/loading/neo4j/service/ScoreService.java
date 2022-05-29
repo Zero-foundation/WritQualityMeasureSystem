@@ -49,11 +49,9 @@ public class ScoreService {
         analysisReport.setSignConsiScore(objectM.getSign_consistency());
         analysisReport.setLevel(objectM.getLevels());
         analysisReport.setWrongUsedList(objectM.getWrongUsedList());
-
-        //TODO: 主观质量评估
-//        subjectM.subjectM(ws);
-//        analysisReport.setJudgeScore(subjectM.JudgmentRight());
-//        analysisReport.setLawScore(subjectM.lawRight());
+        subjectM.subjectM(ws);
+        analysisReport.setJudgeScore(subjectM.JudgmentRight());
+        analysisReport.setLawScore(subjectM.lawRight());
         return analysisReport;
     }
 }

@@ -159,19 +159,16 @@ public class subjectMeasure {
         String standard3 = "从宽";
         String standard4 = "减轻";
         String standard5 = "系初犯";
-        String standard6 = "缓刑";
+
         int weight = 0;
         for(String circu : cirList){
-            if(circu.contains(standard6)){
-                weight -= 3;
-                continue;
-            }
+
             if(circu.contains(standard5)){
-                weight -= 1;
+                weight --;
                 continue;
             }
             if(circu.contains(standard1)){
-                weight++;
+                weight ++;
                 continue;
             }
             if(circu.contains(standard2)){
@@ -212,22 +209,35 @@ public class subjectMeasure {
         map.put(type6,zero);
         for(String str : judge){
             if(str.contains(type0)){
-
+                System.out.println(str);
                 map.replace(type0,1.0);
                 continue;
             }
             if(str.contains(type1)){
+                System.out.println(str);
                 map.replace(type1,1.0);
                 continue;
             }
             if(str.contains(type2)){
                 double num = 0;
+                System.out.println(str);
                 if(str.contains("年") && str.contains("月")){
                     String year = str.substring(str.indexOf("刑")+1,str.indexOf("年"));
-                    String month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    String month;
+                    if(str.contains("个月")){
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    }else{
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("月"));
+                    }
+
                     num = digitalTrans(year) + (double)(digitalTrans(month))/100;
                 }else if(str.contains("月")){
-                    String month = str.substring(str.indexOf("刑")+1,str.indexOf("个月"));
+                    String month;
+                    if(str.contains("个月")){
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    }else{
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("月"));
+                    }
                     num = (double)(digitalTrans(month))/100;
                 }else if(str.contains("年")){
                     String year = str.substring(str.indexOf("刑")+1,str.indexOf("年"));
@@ -240,12 +250,23 @@ public class subjectMeasure {
             }
             if(str.contains(type3)){
                 double num = 0;
+                System.out.println(str);
                 if(str.contains("年") && str.contains("月")){
                     String year = str.substring(str.indexOf("役")+1,str.indexOf("年"));
-                    String month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    String month;
+                    if(str.contains("个月")){
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    }else{
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("月"));
+                    }
                     num = digitalTrans(year) + (double)(digitalTrans(month))/100;
                 }else if(str.contains("月")){
-                    String month = str.substring(str.indexOf("役")+1,str.indexOf("个月"));
+                    String month;
+                    if(str.contains("个月")){
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    }else{
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("月"));
+                    }
                     num = (double)(digitalTrans(month))/100;
                 }else if(str.contains("年")){
                     String year = str.substring(str.indexOf("役")+1,str.indexOf("年"));
@@ -257,13 +278,24 @@ public class subjectMeasure {
                 continue;
             }
             if(str.contains(type4)){
+                System.out.println(str);
                 double num = 0;
                 if(str.contains("年") && str.contains("月")){
                     String year = str.substring(str.indexOf("刑")+1,str.indexOf("年"));
-                    String month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    String month;
+                    if(str.contains("个月")){
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    }else{
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("月"));
+                    }
                     num = digitalTrans(year) + (double)(digitalTrans(month))/100;
                 }else if(str.contains("月")){
-                    String month = str.substring(str.indexOf("刑")+1,str.indexOf("个月"));
+                    String month;
+                    if(str.contains("个月")){
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    }else{
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("月"));
+                    }
                     num = (double)(digitalTrans(month))/100;
                 }else if(str.contains("年")){
                     String year = str.substring(str.indexOf("刑")+1,str.indexOf("年"));
@@ -275,13 +307,24 @@ public class subjectMeasure {
                 continue;
             }
             if(str.contains(type5)){
+                System.out.println(str);
                 double num = 0;
                 if(str.contains("年") && str.contains("月")){
                     String year = str.substring(str.indexOf("利")+1,str.indexOf("年"));
-                    String month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    String month;
+                    if(str.contains("个月")){
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    }else{
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("月"));
+                    }
                     num = digitalTrans(year) + (double)(digitalTrans(month))/100;
                 }else if(str.contains("月")){
-                    String month = str.substring(str.indexOf("利")+1,str.indexOf("个月"));
+                    String month;
+                    if(str.contains("个月")){
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("个月"));
+                    }else{
+                        month = str.substring(str.indexOf("年")+1,str.indexOf("月"));
+                    }
                     num = (double)(digitalTrans(month))/100;
                 }else if(str.contains("年")){
                     String year = str.substring(str.indexOf("利")+1,str.indexOf("年"));
@@ -294,6 +337,7 @@ public class subjectMeasure {
             }
 
             if(str.contains(type6)){
+                System.out.println(str);
                 double num;
 
                 String money = str.substring(str.indexOf("币")+1,str.indexOf("元"));

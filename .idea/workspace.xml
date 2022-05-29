@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="feat: 整合python代码，完善接口;完善分析报告等">
+    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="feat: 图谱展示功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/src/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/src/extract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/subjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/subjectMeasure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/GraphServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -93,7 +93,7 @@
       <recent name="com.loading.neo4j.readUtils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GraphServiceTest.JudgeMeasure">
+  <component name="RunManager" selected="Spring Boot.Neo4jDemoApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -240,6 +240,7 @@
       <workItem from="1652597227315" duration="5851000" />
       <workItem from="1652608881008" duration="1597000" />
       <workItem from="1652610836393" duration="10043000" />
+      <workItem from="1653842780795" duration="948000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1650807389243</created>

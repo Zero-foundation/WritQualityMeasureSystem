@@ -6,33 +6,7 @@ import os
 from Crime import Crime
 from wenshu import wenshu
 from LegalBase import LegalBase
-import jieba
 import json
-
-crimes = {}
-crime_list = []
-
-
-def read_crime():
-    f = open(r'D:\PythonProcect\judgementSpider\data\crimes.txt', 'r', encoding='utf-8')
-    global crimes
-    global crime_list
-
-    for line in f.readlines():
-        strs = line.split('&quot;')
-        crimes[strs[11]] = 0
-    crime_list = crimes.keys()
-    # print(crime_list)
-    f.close()
-
-
-def save_crime():
-    global crimes
-    dict=sorted(crimes.items(), key=lambda x: x[1], reverse=True)
-    # print(dict)
-    f=open('D:\PythonProcect\judgementSpider\log\crimes','a+',encoding='UTF-8')
-    for i, j in dict:
-        f.write(i+': '+str(j)+'\n')
 
 
 def batch_extract(file_dir):
@@ -49,8 +23,7 @@ def batch_extract(file_dir):
 
 
 def extract(filename, file_count):
-    global crimes
-    global crime_list
+
     doc = docx.Document(filename)
     if len(doc.paragraphs) < 3:
         f = open(r'D:\PythonProcect\judgementSpider\log\parse_log', 'a+', encoding='UTF-8')
@@ -250,9 +223,7 @@ def extract(filename, file_count):
 
 
 if __name__ == '__main__':
-    read_crime()
     fileName=sys.argv[1]
-    # print('fileName: '+fileName)
     res=extract(fileName,0)
     print(res)
     # filename1 = r"D:\PythonProcect\judgementSpider\judgements\董某某故意伤害罪一审刑事判决书.docx"

@@ -433,6 +433,4 @@ public class subjectMeasure {
         //System.out.println(num);
         return num;
     }
-
-
 }

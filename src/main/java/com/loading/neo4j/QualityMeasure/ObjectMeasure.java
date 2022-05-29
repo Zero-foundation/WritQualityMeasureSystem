@@ -606,7 +606,10 @@ public class ObjectMeasure {
         alb_num_list.addAll(Arrays.asList(splited));
 
         
-        
+        //前文已经完成应该有汉字数字部分和应该有阿拉伯数字部分字符串的收集
+        //alb_num_list是可能包含有阿拉伯数字而不应该有汉字数字的句子的列表
+        //这里对应该有阿拉伯数字部分的字符串进行校验
+        //crr_cnt +=检查到的阿拉伯数字数量，wrong_cnt+=检查到汉字数字的数
         for(String str:alb_num_list){
             List<List<String>> res=regexFind("\\d+\\.?(\\d*)?",str);
             if(res.size()>0){
@@ -615,16 +618,13 @@ public class ObjectMeasure {
             List<List<String>> res2=regexFind("[一二三四五六七八九十百千万亿]+",str);
             if(res2.size()>0){
                 alb_num_wrong_cnt+=res2.size();
-//                wrongUsedList.add(str+"数字使用错误");
             }
         }
-
 
         for(String str:hanzi_num_list){
             List<List<String>> res=regexFind("\\d+\\.?(\\d*)?",str);
             if(res.size()>0){
                 hanzi_num_wrong_cnt+=res.size();
-//                wrongUsedList.add(str+" 数字使用错误");
             }
             List<List<String>> res2=regexFind("[一二三四五六七八九十百千万亿]+",str);
             if(res2.size()>0){

@@ -18,7 +18,6 @@ public class FileController {
     FileService fileService;
     @PostMapping("upload")
     public ResponseVO score(@RequestParam("file") MultipartFile file) throws IOException {
-
         try {
             System.out.println("successfully extract file");
             return ResponseVO.buildSuccess(fileService.uploadFile(file));

@@ -27,27 +27,9 @@ public class ScoreService {
 
     public AnalysisReport score(String fileName) throws Exception {
 
-        //将文件保存在本地的D:\\Writ_temp文件夹下
-//        System.out.println(file);
+
         Writ ws;
-//        if (file == null) {
-//            System.out.println("-----------文件------------");
-//            return null;
-//        }
-//        if(!file.getOriginalFilename().endsWith(".docx")){
-//            throw new Exception("文件不是docx类型，不符合规范。");
-//        }
-//        InputStream in = null;
-//        String fileName="";
         try {
-            //将file转InputStream
-//            in = file.getInputStream();
-//            fileName = "D:\\Writ_temp\\" + file.getOriginalFilename();
-//            OutputStream outputStream = new FileOutputStream(fileName);
-//            IOUtils.copy(in, outputStream);
-//            outputStream.flush();
-//            in.close();
-//            outputStream.close();
             ws = rfd.extract(fileName);
         } catch (IOException e) {
             throw new Exception("文书解析失败，请检查内容");

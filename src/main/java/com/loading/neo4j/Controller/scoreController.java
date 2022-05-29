@@ -31,4 +31,5 @@ public class scoreController {
             return ResponseVO.buildFailure(e.getMessage());
         }
     }
+
 }

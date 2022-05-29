@@ -3,12 +3,19 @@ package com.loading.neo4j.service;
 import com.loading.neo4j.dao.BasicNodeDao;
 import com.loading.neo4j.dao.CrimeDao;
 import com.loading.neo4j.dao.LawDao;
+import com.loading.neo4j.datainteract.Accused;
+import com.loading.neo4j.datainteract.Graph;
+import com.loading.neo4j.datainteract.Writ;
 import com.loading.neo4j.datainteract.criminalContent;
+import com.loading.neo4j.datainteract.graph.node;
+import com.loading.neo4j.datainteract.graph.relation;
 import com.loading.neo4j.entity.*;
 import com.loading.neo4j.entity.Basic.BasicNode;
+import com.loading.neo4j.readUtils.readFromDocx;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -23,9 +30,12 @@ public class createGraphService {
     private CrimeDao crimeDao;
     @Autowired
     private LawDao lawDao;
-
+    @Autowired
+    readFromDocx rfd;
     @Autowired
     private GraphService graphService;
+
+    int cur_id=0;
 
     List<criminalContent> criminalContentList;
     criminalContent c;
@@ -168,4 +178,41 @@ public class createGraphService {
         graphService.saveRelation(reA);
     }
 
+    public Graph getGraph(String fileName) throws Exception {
+        Writ ws;
+        Graph graph=new Graph();
+        try {
+            ws = rfd.extract(fileName);
+        } catch (IOException e) {
+            throw new Exception("文书解析失败，请检查内容");
+        }
+        List<Accused> accusedList=ws.getAccused_list();
+
+        int law_start=cur_id+1;
+        for(String law:ws.getLaws()){
+            graph.addNode(new node(++cur_id,law,"法律条文"));
+        }
+        int law_end=cur_id;
+
+        for(Accused accused:accusedList){
+            int accused_id=cur_id+1;
+            graph.addNode(new node(++cur_id,accused.getName(),"被告人"));
+            for(int index=law_start;index<=law_end;index++){
+                graph.addRelation(new relation(accused_id,index));
+            }
+            for(String circumstance:accused.getCircumstance()){
+                graph.addNode(new node(++cur_id,circumstance,"情节"));
+                graph.addRelation(new relation(accused_id,cur_id));
+            }
+            for(String res:accused.getJudge_res()){
+                graph.addNode(new node(++cur_id,res,"审判结果"));
+                graph.addRelation(new relation(accused_id,cur_id));
+            }
+            for(String crime:accused.getCrimes()){
+                graph.addNode(new node(++cur_id,crime,"罪名"));
+                graph.addRelation(new relation(accused_id,cur_id));
+            }
+        }
+        return graph;
+    }
 }

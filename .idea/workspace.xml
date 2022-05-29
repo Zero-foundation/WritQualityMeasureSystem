@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="feat: 整合python代码，完善接口;完善分析报告等">
+    <list default="true" id="a6ddd288-5694-458b-bde1-402740a62fcf" name="Default Changelist" comment="feat: 分为两个接口，upload和score">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Controller/GraphCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Controller/GraphCreateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Controller/scoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Controller/scoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/Neo4jDemoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/QualityMeasure/ObjectMeasure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/AnalysisReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/Writ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/datainteract/Writ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromDocx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromDocx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/readUtils/readFromJson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/service/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/service/ScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/service/createGraphService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/service/createGraphService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/util/GetLevelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loading/neo4j/util/GetLevelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/ScoreServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loading/neo4j/service/ScoreServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,48 +111,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectMeasureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphTest.GraphControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WritQualityMeasureSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.loading.neo4j.QualityMeasure.*" />
+          <option name="PATTERN" value="com.loading.neo4j.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.loading.neo4j.QualityMeasure" />
-      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.QualityMeasure.ObjectMeasureTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ObjectMeasureTest.calAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WritQualityMeasureSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.loading.neo4j.QualityMeasure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.loading.neo4j.QualityMeasure" />
-      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.QualityMeasure.ObjectMeasureTest" />
-      <option name="METHOD_NAME" value="calAllTest" />
+      <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
+      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.GraphTest" />
+      <option name="METHOD_NAME" value="GraphControllerTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectMeasureTest.getLevelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphTest.getGraphTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WritQualityMeasureSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.loading.neo4j.QualityMeasure.*" />
+          <option name="PATTERN" value="com.loading.neo4j.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.loading.neo4j.QualityMeasure" />
-      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.QualityMeasure.ObjectMeasureTest" />
-      <option name="METHOD_NAME" value="getLevelTest" />
+      <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
+      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.GraphTest" />
+      <option name="METHOD_NAME" value="getGraphTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,6 +154,22 @@
       <option name="PACKAGE_NAME" value="com.loading.neo4j.QualityMeasure" />
       <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.QualityMeasure.ObjectMeasureTest" />
       <option name="METHOD_NAME" value="sortLevel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreServiceTest.scoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WritQualityMeasureSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loading.neo4j.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.loading.neo4j.service" />
+      <option name="MAIN_CLASS_NAME" value="com.loading.neo4j.service.ScoreServiceTest" />
+      <option name="METHOD_NAME" value="scoreTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GraphTest.GraphControllerTest" />
+        <item itemvalue="JUnit.GraphTest.getGraphTest" />
+        <item itemvalue="JUnit.ScoreServiceTest.scoreTest" />
         <item itemvalue="JUnit.getLevelTest.getLevelUtil" />
         <item itemvalue="JUnit.ObjectMeasureTest.sortLevel" />
-        <item itemvalue="JUnit.ObjectMeasureTest.getLevelTest" />
-        <item itemvalue="JUnit.ObjectMeasureTest.calAllTest" />
-        <item itemvalue="JUnit.ObjectMeasureTest" />
       </list>
     </recent_temporary>
   </component>
@@ -243,6 +244,20 @@
       <workItem from="1652597227315" duration="5851000" />
       <workItem from="1652608881008" duration="1597000" />
       <workItem from="1652610836393" duration="10043000" />
+      <workItem from="1652686595136" duration="3450000" />
+      <workItem from="1652757531073" duration="790000" />
+      <workItem from="1652773792062" duration="2666000" />
+      <workItem from="1652871859826" duration="26000" />
+      <workItem from="1653058789142" duration="4551000" />
+      <workItem from="1653104612996" duration="600000" />
+      <workItem from="1653143213949" duration="1000" />
+      <workItem from="1653222257685" duration="12000" />
+      <workItem from="1653411025314" duration="963000" />
+      <workItem from="1653417094491" duration="321000" />
+      <workItem from="1653570479855" duration="1248000" />
+      <workItem from="1653588465897" duration="2699000" />
+      <workItem from="1653728986944" duration="1902000" />
+      <workItem from="1653807303162" duration="16400000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1650807389243</created>
@@ -328,7 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651938297913</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: 完善客观质量评估，添加相对维度等">
+      <created>1652686713166</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1652686713166</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: 分为两个接口，upload和score">
+      <created>1653064817663</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653064817663</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +380,9 @@
     <MESSAGE value="update details" />
     <MESSAGE value="feat: 上传文件并做评审的接口;解决CORS跨域;" />
     <MESSAGE value="feat: 整合python代码，完善接口;完善分析报告等" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合python代码，完善接口;完善分析报告等" />
+    <MESSAGE value="feat: 完善客观质量评估，添加相对维度等" />
+    <MESSAGE value="feat: 分为两个接口，upload和score" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 分为两个接口，upload和score" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
